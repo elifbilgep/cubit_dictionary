@@ -13,7 +13,9 @@ class Home_Screen extends StatelessWidget {
       listener: (context, state) {
         if (state is WordSearchedState && state.words != null) {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => ListScreen(words: state.words)));
+              context,
+              MaterialPageRoute(
+                  builder: (context) => ListScreen(words: state.words)));
         }
       },
       bloc: cubit,
@@ -52,21 +54,30 @@ class Home_Screen extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
-            TextField(
-              controller: cubit.queryController,
-              decoration: InputDecoration(
-                  hintText: "Search a word",
-                  hintStyle: Theme.of(context)
-                      .textTheme
-                      .bodyText1
-                      .copyWith(fontSize: 16, color: Colors.grey.shade700),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(5),
-                    borderSide: BorderSide(color: Colors.transparent),
-                  ),
-                  prefixIcon: Icon(Icons.search),
-                  fillColor: Colors.grey.shade300,
-                  filled: true),
+            Container(
+              decoration: BoxDecoration(boxShadow: [
+                BoxShadow(
+                    offset: Offset(0, 5),
+                    blurRadius: 8,
+                    spreadRadius: 3,
+                    color: Colors.grey.shade900)
+              ]),
+              child: TextField(
+                controller: cubit.queryController,
+                decoration: InputDecoration(
+                    hintText: "Search a word",
+                    hintStyle: Theme.of(context)
+                        .textTheme
+                        .bodyText1
+                        .copyWith(fontSize: 16, color: Colors.grey.shade700),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5),
+                      borderSide: BorderSide(color: Colors.transparent),
+                    ),
+                    prefixIcon: Icon(Icons.search),
+                    fillColor: Colors.grey.shade100,
+                    filled: true),
+              ),
             ),
             Spacer(),
             Container(

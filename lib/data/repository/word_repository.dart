@@ -18,9 +18,8 @@ class WordRepository {
       throw e;
     } on HttpException catch (e) {
       throw e;
-    }on FormatException catch (e) {
+    } on FormatException catch (e) {
       throw e;
     }
-    
   }
 }
