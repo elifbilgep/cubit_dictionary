@@ -63,6 +63,7 @@ class HomeScreen extends StatelessWidget {
                     color: Colors.grey.shade900)
               ]),
               child: TextField(
+                cursorColor: Colors.orange,
                 controller: cubit.queryController,
                 decoration: InputDecoration(
                     hintText: "Search a word",
