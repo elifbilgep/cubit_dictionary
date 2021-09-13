@@ -1,5 +1,4 @@
 import 'package:bloc_dictionary/business_logic/blocs/dictionary_cubit.dart';
-import 'package:bloc_dictionary/business_logic/blocs/dictionary_state.dart';
 import 'package:bloc_dictionary/data/repository/word_repository.dart';
 import 'package:bloc_dictionary/presentation/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +22,7 @@ class MyApp extends StatelessWidget {
       ),
       home: BlocProvider<DictionaryCubit>(
         create: (context) => DictionaryCubit(WordRepository()),
-        child: Home_Screen(),
+        child: HomeScreen(),
       ),
     );
   }

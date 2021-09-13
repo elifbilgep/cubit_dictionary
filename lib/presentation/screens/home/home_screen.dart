@@ -4,7 +4,7 @@ import 'package:bloc_dictionary/presentation/screens/list/list_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class Home_Screen extends StatelessWidget {
+class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final cubit = context.watch<DictionaryCubit>();
