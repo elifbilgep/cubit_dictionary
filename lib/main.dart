@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        primaryColor: Colors.orange,
         textTheme: TextTheme(
             headline1:
                 GoogleFonts.bebasNeue(fontSize: 45, color: Colors.orange),
