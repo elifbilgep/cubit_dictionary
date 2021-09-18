@@ -1,16 +1,40 @@
-# bloc_dictionary
+<h1>
+Cubit Dictionary App
+</h1>
 
-A new Flutter project.
+Flutter project with the usage of rest api and architectured by bloc 
 
-## Getting Started
+<p align= "center" >
+  <img 
+       src = "https://github.com/elifbilgep/cubit_dictionary/blob/master/assets/home1.png" alt ="">
+<br>
+  <h3 align = "center"> Home Page </h3>
+</p>
 
-This project is a starting point for a Flutter application.
+<br>
 
-A few resources to get you started if this is your first Flutter project:
+<p align= "center" >
+  <img 
+       src = "https://github.com/elifbilgep/cubit_dictionary/blob/master/assets/home2.png" alt ="">
+<br>
+  <h3 align = "center"> Form Field When Its Clicked </h3>
+</p>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<br> 
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align= "center" >
+  <img 
+       src = "https://github.com/elifbilgep/cubit_dictionary/blob/master/assets/result.png" alt ="">
+<br>
+  <h3 align = "center"> Result Page </h3>
+</p>
+
+<br>
+
+<p align= "center" >
+  <img 
+       src = "https://github.com/elifbilgep/cubit_dictionary/blob/master/assets/detail.png" alt ="">
+<br>
+  <h3 align = "center"> Detail Page </h3>
+</p>
+
